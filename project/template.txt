@@ -1,0 +1,22 @@
+Django Architecture
+MVT --> model,view and template
+Template contain variable which get replaced
+with values when template is evaluated
+
+The project structure
+soft_prof -->1. tester ,2.coder 3.manager
+How to render the template in django
+step1: create the template in django
+     django-admin startproject project_name
+step2: Create application in django project 
+   python manage.py startapp app_name
+step3: Registered the application in project
+    Open settings.py
+   Go to installed app and add custom app
+step4: create template folder under the main
+step5: Add template directory in settings.py
+      TEMPLATE_DIR=os.path.join(BASE_DIR,"")
+      TEMPLATE=[{'DIR':[TEMPLATE_DIR]}]
+STEP6: After we need to create template file under template folder
+step7:Write the view function in views.py
+step-8: Then define url for each view function of application in urls.py

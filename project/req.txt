@@ -1,0 +1,7 @@
+python
+vscode
+virtual env.
+python
+project1 and project2
+ 3.0          4.0
+ 

@@ -1,0 +1,27 @@
+soft_prof
+-tester
+-coder
+-manager
+view.py
+-function based view
+-class based view
+1. create project(django-admin startproject proj_name)
+2. create application(python manage.py startapp app_name)
+3. install application(Go to  project folder open settings .py file and edit the installed apps)
+4. view.py ---> function based view
+views.py --> coder
+1. jrcoder 2. srcoder
+views.py ---> tester
+1.jrtester   2. srtester
+
+why url pattern inside application
+--reduce the dependency
+--enhance application performance
+--reuse the application in another
+include()
+include(modulename, namespace)
+include(pattern_list)
+
+
+
+
