@@ -1,0 +1,44 @@
+Django template for each application
+1. create project
+2.to create application
+3. register the app
+4. to create template folder
+5. to write the views
+django.contrib.staticfiles
+
+load template tag
+{% load module_name %}
+
+eg.
+{% load mytag %}
+
+{% load s1 from mytag %}
+
+Static template tag
+
+{% Static file_name %}
+
+eg
+{% load static % }
+
+{% static path/file_name %}
+
+<link href="{% static 'style.css' %}">
+
+<img src="{% static 'img/1.jpg' %}">
+
+Steps to followed to add the static file in the project
+1--> Create project
+django-admin startproject proj_name
+2-->Create  multiple application
+ python manage.py startapp app_name
+3--> Inject the application in the project
+Open settings.py and update installed
+4--> Create templates folder under qpplication
+5-->Inside templates folder create application and then add html pages
+6--> Registered the templates folder in settings
+7-->create static folder under project dir and then add the static files
+8--> Write view function in the views.py
+9-->define url for view function of app_name
+     in project url or add under application
+10-->Write template file code and static file

@@ -1,0 +1,20 @@
+{% extends 'coder/base.html'%}
+
+{% block content %}
+<h1>Add coder details</h1>
+<div class="container">
+         <div class="row">
+                  <div class="col-md-6">
+                           <div class="card bg-in">
+                                    <div class="card-body">
+                                             <form action=""  method="POST">
+                                                      {% csrf_token %}
+                                                      {{form.as_p }}
+                                                      <input type="Submit" value="add" class="btn btn-success">
+                                             </form>                                   </div>
+                           </div>
+                  </div>
+         </div>
+</div>
+
+{% endblock content %}

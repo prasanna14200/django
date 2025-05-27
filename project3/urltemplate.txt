@@ -1,0 +1,14 @@
+Django url template tag
+
+
+using view function 
+def index(request):
+     return render(request,'test1/index.html',{'in': '/index'})
+urlpatterns=[
+         path('index/',views.index)
+]
+
+template
+
+<a href='/index'>Index</a>
+<a href='{{in}}'>Index</a>

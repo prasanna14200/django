@@ -1,0 +1,44 @@
+How to create database table in django
+
+what is Model?
+use of model class
+Represent table in database
+django.db.models.Model
+
+
+Databases
+
+MYSQL, Oracle, SQLite, SQL
+
+Create model
+class classname(models.Model):
+field name=models.fieldtype(size)
+
+class coder(models.Model):
+coderid=models.IntegerField()
+coder_name=models.CharField(max_length=200)
+coder_email=models.EmailField(max_length=100)
+coder_proj_name=models.CharField(max_length=100)
+
+Rules:
+field name cannot be python reserved word
+A filed name acnnot contain more than one underscore in row
+
+
+How to use model
+
+python manage.py makemigrations
+python manage.py migrate
+Model operation
+
+
+CreateModel(name_field,options=None,bases=None)
+DeleteModel(name)
+RenameModel(old_name,new_name)
+AlterModelTable(name,table)
+
+
+Admin application and
+create super user in django
+
+python manage.py createsuperuser

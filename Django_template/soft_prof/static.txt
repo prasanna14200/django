@@ -1,0 +1,10 @@
+Template inheritance in django
+{% extends 'base.html' %}
+
+{% block blockname%}...{% endblock %}
+{% block blockname%}...{% endblock blockname %}
+{% block title%}...{% endblock title %}
+
+
+soft_prof --> tester-->base ,jrtest , srtest
+              coder -->

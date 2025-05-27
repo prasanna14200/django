@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'tester/base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+       {% block title %}
+       jr tester
+      
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     {% endblock %}
+</head>
+<body>
+         {% block content %}
+     
+    <p>Hi I am Jr Tester</p>
+    <img src="{% static 'img/sam.jpg' %}" alt="Test Image">
+
+    <!-- Link to external JS -->
+    <script src="{% static 'js/script.js' %}"></script>
+        {% endblock content %}
+</body>
+</html>

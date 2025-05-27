@@ -1,0 +1,38 @@
+{% extends 'coder/base.html'%}
+{% block content %}
+<h1 class="text-center my-3">List of coder</h1>
+<div class="container">
+         <div class="row">
+                  <div class="col-md-11">
+                           <div class="card">
+                                    <div class="card-body">
+                                             <table class="table table-striped">
+                                                 <thead>
+                                                      <tr>
+                                                         <th>Sno</th>
+                                                         <th>Name of the coder</th>
+                                                         <th>Designation</th>
+                                                         <th>Email</th>
+                                                         <th>Exp</th>      
+                                                      </tr>
+                                                 </thead> 
+                                                   {% for c in object_list %}
+                                                   <tr>
+                                                      <td>{{forloop.counter}} </td>
+                                                      <td>{{c.name}}</td>
+                                                      <td>{{c.designation}}</td>
+                                                      <td>{{c.email}}</td>
+                                                      <td>{{c.yoe}}</td>
+                                                      <td><a href="update/{{c.id}}" class="btn btn-success md-sm">UPDATE</a></td>
+                                                      <td><a href="delete/{{c.id}}" class="btn btn-danger md-sm">DELETE</a></td>
+                                                 
+                                                   </tr>
+                                                   {% endfor %}
+                                                 </tbody>  
+                                             </table>
+                                    </div>
+                           </div>
+                  </div>
+         </div>
+</div>
+{% endblock content %}
